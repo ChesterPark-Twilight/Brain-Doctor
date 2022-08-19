@@ -1,0 +1,88 @@
+<resources>
+    <string name="app_name">云上智脑</string>
+
+    //提示
+    <string name="enter">进入</string>
+    <string name="quit">退出</string>
+    <string name="confirm">确认</string>
+    <string name="cancel">取消</string>
+    <string name="upload">上传</string>
+    <string name="download">下载</string>
+    <string name="status">状态</string>
+    <string name="activityTitle">Activity Title</string>
+
+    //登录注册
+    <string name="login">登录</string>
+    <string name="logout">退出登录</string>
+    <string name="logoff">注销账号</string>
+    <string name="Welcome">欢迎使用云上智脑</string>
+    <string name="loginWelcome">登录开启智慧医疗</string>
+    <string name="accountHint">请输入账号</string>
+    <string name="passwordHint">请输入密码</string>
+    <string name="passwordConfirmHint">请再次输入密码</string>
+    <string name="rememberPassword">记住密码</string>
+    <string name="registerHint">没有账户?点击注册</string>
+    <string name="loginProtocolHint">我已阅读并同意</string>
+    <string name="userUsageProtocol">《用户使用协议》</string>
+    <string name="register">注册</string>
+    <string name="registerWelcome">注册开启智慧医疗</string>
+    <string name="patientHint">我是患者</string>
+    <string name="doctorHint">我是医生</string>
+    <string name="nameHint">请输入您的姓名</string>
+    <string name="bondHint">主治医师的姓名</string>
+
+    //DoctorHome页面
+    <string name="titleLoad">加载患者名单</string>
+
+    //PatientHome页面
+    <string name="titleModel">模型</string>
+    <string name="titleReport">报告</string>
+
+    //Model界面
+    <string name="cardName">用户姓名</string>
+    <string name="cardDetail">用户详细信息</string>
+    <string name="modality">模态</string>
+    <string name="cardTag">卡片标签</string>
+    <string name="cardUpload">上传数据</string>
+    <string name="cardDownload">下载结果</string>
+    <string name="T1">T1</string>
+    <string name="T2">T2</string>
+    <string name="T1CE">T1CE</string>
+    <string name="FLAIR">FLAIR</string>
+    <string name="T1Tag">T1序列横切面展示</string>
+    <string name="T2Tag">T2序列横切面展示</string>
+    <string name="T1CETag">T1CE序列横切面展示</string>
+    <string name="FlairTag">Flair序列横切面展示</string>
+    <string name="showTumour">肿瘤</string>
+    <string name="showCore">肿瘤核心</string>
+    <string name="showEnhance">肿瘤增强</string>
+    <string name="modelUnknown">模型未加载</string>
+    <string name="modelLoading">加载中</string>
+    <string name="modelLoaded">加载成功</string>
+    <string name="modelUnload">加载失败</string>
+
+    //Report界面
+    <string name="report">报告</string>
+
+    //Account界面
+    <string name="accountInfo">用户信息</string>
+    <string name="accountHeadSculpture">头像</string>
+    <string name="accountName">姓名</string>
+    <string name="accountAge">年龄</string>
+    <string name="accountSex">性别</string>
+    <string name="accountDoctor">主治医师</string>
+    <string name="modifyName">修改姓名</string>
+    <string name="modifyAge">修改年龄</string>
+    <string name="modifySex">修改性别</string>
+    <string name="accountNameHint">请输入新的姓名</string>
+    <string name="unitAge">岁</string>
+    <string name="man">男</string>
+    <string name="woman">女</string>
+
+    //PatientCard
+    <string name="patientName">患者姓名</string>
+    <string name="patientDetail">患者详细信息</string>
+    <string name="dataStatusSuccess">数据已上传</string>
+    <string name="dataStatusFail">数据待上传</string>
+
+</resources>

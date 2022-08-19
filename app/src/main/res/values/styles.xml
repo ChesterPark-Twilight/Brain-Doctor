@@ -1,0 +1,46 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="PureWhiteTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorTheme</item>
+        <item name="colorPrimaryDark">@color/colorTheme</item>
+        <item name="colorAccent">@color/colorTheme</item>
+
+        <item name="android:statusBarColor">@android:color/white</item>
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+
+    <style name="TabLayoutTextAppearance">
+        <item name="android:textSize">@dimen/textNormal</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="BottomSheetDialogTheme" parent="Theme.MaterialComponents.Light.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/BottomSheetDialogThemeWrapper</item>
+    </style>
+    <style name="BottomSheetDialogThemeWrapper" parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+    
+    //Checkbox样式
+    <style name="tumourCheckbox" parent="Theme.AppCompat.Light">
+        <item name="colorControlNormal">@color/groupRed</item>
+        <item name="colorControlActivated">@color/groupRed</item>
+    </style>
+
+    <style name="coreCheckbox" parent="Theme.AppCompat.Light">
+        <item name="colorControlNormal">@color/groupCyan</item>
+        <item name="colorControlActivated">@color/groupCyan</item>
+    </style>
+
+    <style name="enhanceCheckbox" parent="Theme.AppCompat.Light">
+        <item name="colorControlNormal">@color/groupBlue</item>
+        <item name="colorControlActivated">@color/groupBlue</item>
+    </style>
+</resources>

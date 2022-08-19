@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="toolbarHeight">60dp</dimen>
+
+    //图标
+    <dimen name="iconTiny">24dp</dimen>
+    <dimen name="iconSmall">42dp</dimen>
+    <dimen name="iconNormal">54dp</dimen>
+    <dimen name="iconBig">64dp</dimen>
+
+    //外边距
+    <dimen name="marginTiny">6dp</dimen>
+    <dimen name="marginSmall">12dp</dimen>
+    <dimen name="marginNormal">16dp</dimen>
+    <dimen name="marginBig">20dp</dimen>
+    <dimen name="marginHuge">32dp</dimen>
+    <dimen name="marginGreat">48dp</dimen>
+
+    //内边距
+    <dimen name="paddingTiny">2dp</dimen>
+    <dimen name="paddingNormal">8dp</dimen>
+    <dimen name="paddingSuperGreat">72dp</dimen>
+
+    //字体大小
+    <dimen name="textSystem">14sp</dimen>
+    <dimen name="textNormal">16sp</dimen>
+    <dimen name="textBig">20sp</dimen>
+    <dimen name="textHuge">27sp</dimen>
+
+    //半径
+    <dimen name="buttonRadius">4dp</dimen>
+    <dimen name="cardRadius">12dp</dimen>
+
+    //
+    <dimen name="editHeight">48dp</dimen>
+    <dimen name="informationBarHeight">148dp</dimen>
+    <dimen name="settingHeight">50dp</dimen>
+    <dimen name="remindBarHeight">48dp</dimen>
+    <dimen name="buttonHeight">36dp</dimen>
+    <dimen name="outlineWidth">4dp</dimen>
+    <dimen name="infoWidth">100dp</dimen>
+    <dimen name="imageSize">210dp</dimen>
+</resources>

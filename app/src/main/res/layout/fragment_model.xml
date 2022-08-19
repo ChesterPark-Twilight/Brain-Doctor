@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    android:id="@+id/modelLayoutContainer"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".InformationDisplay.FragmentModel">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/marginNormal"
+            app:cardBackgroundColor="@color/colorTheme"
+            app:cardCornerRadius="@dimen/cardRadius">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/cardAccountInfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/cardHeadSculpture"
+                        android:layout_width="@dimen/iconNormal"
+                        android:layout_height="@dimen/iconNormal"
+                        android:layout_margin="@dimen/marginNormal"
+                        android:src="@drawable/picture_little_beauty"
+                        app:civ_border_color="@android:color/white"
+                        app:civ_border_width="2dp" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/cardName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/cardName"
+                            android:textColor="@android:color/white"
+                            android:textSize="@dimen/textNormal"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/cardDetail"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/marginTiny"
+                            android:text="@string/cardDetail"
+                            android:textColor="@color/colorTextWhiteLight"
+                            android:textSize="@dimen/textSystem"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/cardDoctor"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/accountDoctor"
+                            android:textColor="@android:color/white"
+                            android:textSize="@dimen/textSystem"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/uploadButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/buttonHeight"
+                    android:layout_marginTop="@dimen/marginNormal"
+                    android:layout_marginEnd="@dimen/marginNormal"
+                    android:text="@string/cardUpload"
+                    android:textColor="@android:color/white"
+                    android:drawableStart="@drawable/mark_upload"
+                    android:background="@drawable/shape_button"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:visibility="gone"/>
+
+                <Button
+                    android:id="@+id/downloadButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/buttonHeight"
+                    android:layout_marginTop="@dimen/paddingNormal"
+                    android:layout_marginEnd="@dimen/marginNormal"
+                    android:layout_marginBottom="@dimen/marginNormal"
+                    android:background="@drawable/shape_button"
+                    android:drawableStart="@drawable/mark_download"
+                    android:text="@string/cardDownload"
+                    android:textColor="@android:color/white"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/uploadButton" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/marginNormal"
+            android:layout_marginEnd="@dimen/marginNormal"
+            android:layout_marginBottom="@dimen/marginNormal"
+            app:cardBackgroundColor="@color/colorTheme"
+            app:cardCornerRadius="@dimen/cardRadius">
+
+            <RadioGroup
+                android:id="@+id/chooseModality"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/marginNormal"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/chooseT1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:buttonTint="@android:color/white"
+                    android:text="@string/T1"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold"/>
+
+                <RadioButton
+                    android:id="@+id/chooseT1CE"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:buttonTint="@android:color/white"
+                    android:text="@string/T1CE"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold"/>
+
+                <RadioButton
+                    android:id="@+id/chooseT2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:buttonTint="@android:color/white"
+                    android:text="@string/T2"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold"/>
+
+                <RadioButton
+                    android:id="@+id/chooseFLAIR"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:buttonTint="@android:color/white"
+                    android:text="@string/FLAIR"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold"/>
+
+            </RadioGroup>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardBrain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/marginNormal"
+            android:layout_marginEnd="@dimen/marginNormal"
+            android:layout_marginBottom="@dimen/marginNormal"
+            app:cardCornerRadius="@dimen/cardRadius" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/marginNormal"
+                    android:layout_marginTop="@dimen/marginSmall"
+                    android:layout_marginEnd="@dimen/marginNormal">
+
+                    <ImageView
+                        android:id="@+id/cardTagImage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/mark_tag"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        android:contentDescription="@string/cardTag" />
+
+                    <TextView
+                        android:id="@+id/cardTagText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/marginTiny"
+                        android:text="@string/T1Tag"
+                        android:textColor="@color/colorTheme"
+                        android:textSize="@dimen/textSystem"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/cardTagImage"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cardModelStatus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/marginSmall"
+                        android:orientation="horizontal"
+                        app:cardCornerRadius="@dimen/buttonRadius"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/paddingTiny">
+
+                            <TextView
+                                android:id="@+id/modelStatusText"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/modelUnknown"
+                                android:textColor="@color/colorTextLight"
+                                android:textSize="@dimen/textSystem"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <ImageView
+                                android:id="@+id/modelStatusImage"
+                                android:layout_width="@dimen/iconTiny"
+                                android:layout_height="@dimen/iconTiny"
+                                android:layout_marginStart="@dimen/marginTiny"
+                                android:src="@drawable/state_unknown"
+                                app:layout_constraintStart_toEndOf="@+id/modelStatusText"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                android:contentDescription="@string/status" />
+
+                            <ProgressBar
+                                android:id="@+id/modelStatusProgress"
+                                android:layout_width="@dimen/iconTiny"
+                                android:layout_height="@dimen/iconTiny"
+                                android:layout_marginStart="@dimen/marginTiny"
+                                app:layout_constraintStart_toEndOf="@+id/modelStatusText"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                android:visibility="invisible"/>
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <ImageView
+                    android:id="@+id/modalityImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/shape_outline"
+                    android:layout_marginStart="@dimen/marginHuge"
+                    android:layout_marginTop="@dimen/marginNormal"
+                    android:layout_marginEnd="@dimen/marginHuge"
+                    android:layout_marginBottom="@dimen/marginNormal"
+                    android:contentDescription="@string/modality"
+                    android:src="@drawable/picture_brain" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/marginHuge"
+                    android:layout_marginEnd="@dimen/marginHuge">
+
+                    <CheckBox
+                        android:id="@+id/tumourCheckbox"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/showTumour"
+                        android:textColor="@color/groupRed"
+                        android:textStyle="bold"
+                        android:theme="@style/tumourCheckbox"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/coreCheckbox"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <CheckBox
+                        android:id="@+id/coreCheckbox"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/showCore"
+                        android:textColor="@color/groupCyan"
+                        android:textStyle="bold"
+                        android:theme="@style/coreCheckbox"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/enhanceCheckbox"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <CheckBox
+                        android:id="@+id/enhanceCheckbox"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/showEnhance"
+                        android:textColor="@color/groupBlue"
+                        android:textStyle="bold"
+                        android:theme="@style/enhanceCheckbox"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </LinearLayout>
+
+                <SeekBar
+                    android:id="@+id/modalitySeekBar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/marginHuge"
+                    android:layout_marginTop="@dimen/marginNormal"
+                    android:layout_marginEnd="@dimen/marginHuge"
+                    android:layout_marginBottom="@dimen/marginNormal"
+                    android:background="@drawable/shape_outline"
+                    android:max="154" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>
